@@ -8,6 +8,10 @@ export default class AddPlayer extends React.Component {
     e.preventDefault();
   
     if (playerName) {
+      if (playerName.length > 14) {
+        e.target.playerName.value = '';
+        return alert("Name can't be more than 14 characters.");
+      }
       e.target.playerName.value = '';
       Players.insert({
         name: playerName,
@@ -19,10 +23,10 @@ export default class AddPlayer extends React.Component {
   }
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-					<input type="text" name="playerName" placeholder="Player Name"/>
-					<button type="submit">Submit</button>
+      <div className="item">
+        <form className="form" onSubmit={this.handleSubmit}>
+					<input className="form__input" type="text" name="playerName" placeholder="Player Name" autoComplete="off"/>
+					<button className="button" type="submit">Add Player</button>
 				</form>
       </div>
     );
