@@ -1,6 +1,6 @@
-# Score Keep
+# Score Keeping Alpha
 
 Made in Meteor
 
-**View here:** [Score Keep Project](https://score-keep-vhffjmmmtd.now.sh/)
+**View here:** [Score Keep Project](https://score-keeper-uvnwdsugie.now.sh/)
 
